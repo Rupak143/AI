@@ -23,4 +23,4 @@ larger_than(Planet1, Planet2) :-
 % Find planets closer to the Sun than a given distance
 closer_than(Planet, Distance) :-
     planet(Planet, DistanceFromSun, _, _, _),
-    DistanceFromSun < Distance.
+    DistanceFromSun =< Distance.
